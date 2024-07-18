@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <style>
+        header{
+            height:100vh;
+            width:100%;
+            background-image: url("https://img.freepik.com/premium-photo/row-old-books-green-shelf-horizontal-background-scene_118047-10662.jpg");
+            filter:brightness(90%);
+            background-size: cover;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        nav{
+            width:100%;
+            height:100px;
+            display:flex;
+            font-weight: 110;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2.5em;
+            letter-spacing: 2.3px;
+            font-weight: 210;
+            font-style: bold;
+            padding-top: 1.75cm;
+            padding-right: 5.3cm;
+            color:rgb(118, 3, 51)
+        }
+        .menu a{
+            text-decoration: none;
+            color: black;
+            font-size: 21px;
+            padding-top: 1.4cm;
+            padding:10px 20px;
+            position:relative;
+            font-weight: 210;
+        }
+        .menu a:before{
+          content: '';
+          position: absolute;
+          top:0;
+          left:0;
+          width:0%;
+          height:100%;
+          border-bottom: 2px solid rgb(190, 130, 130);
+          transition:0.2s linear;
+        }
+        .menu a:hover:before{
+            width:90%;
+        }
+        .booking a{
+            text-decoration: none;
+            color: white;
+            font-size: 10px;
+            padding-top: 1cm;
+            padding:10px 20px;
+            background: rgb(214, 19, 19);
+        }
+        .booking a:hover{
+            background: transparent;
+            border:2px solid rgb(49, 2, 2);
+        }
+        .caption{
+            max-width: 650px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-80%);
+            text-align: center;
+            color:rgb(100, 2, 2);
+        }
+        .caption span{
+            letter-spacing: 4px;
+            font-size: 1.5em;;
+        }
+        
+        .caption h1{
+            font-size:3.5em;
+            font-style:italic;
+            color: rgb(1, 2, 36);
+        }
+        .caption a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding-top: 2cm;
+            padding:10px 20px;
+            background: indianred;
+            border-radius:8px;
+        }
+        .caption a:hover{
+            background: transparent;
+            border:2px solid indianred;
+        }
+        #aboutus 
+        {
+            height:100vh;
+            width:100%;
+            background-image: url("https://static.vecteezy.com/system/resources/previews/013/651/331/non_2x/graphic-design-illustration-of-a-stack-of-encyclopedia-books-background-with-blank-area-free-vector.jpg");
+            filter:brightness(75%);
+            background-size: cover;
+            text-align: center;
+        }
+        #aboutus div>h1
+        {
+            padding-top: 1.5cm;;
+             font-size: 3em;
+             font-family: serif;
+             color: rgb(33, 1, 33);
+        }
+        #aboutus div>h2{
+            font-size: 2.5em;
+            font-family: serif;
+            color:rgb(106, 8, 8);
+        }
+        #aboutus section{
+            text-align: center;
+            font-size:1.8em;
+            color:rgb(0, 0, 0)
+        }
+        #ourservices{
+            width:100%;
+            height:90vh;
+            background-image:url("https://cdn.pixabay.com/photo/2021/01/21/16/49/books-5937823_1280.jpg");
+            background-size: cover;
+            filter: brightness(60%);
+            text-align: justify;
+        }
+        #ourservices h1{
+            font-size: 3em;
+            padding-top: 1cm;
+            font-family: serif;
+            color: rgb(11, 205, 239);
+        }
+        #ourservices section{
+            font-size:1.25em;
+            color:rgb(0, 0, 0);
+        }
+        #packages{
+            height:90vh;
+            width:100%;
+            background-image: url("https://e0.pxfuel.com/wallpapers/369/30/desktop-wallpaper-open-book-texture-book-background-open-book-texture-background-books-book-texture-book-old-paper-background-ancient-books.jpg");
+            filter:brightness(85%);
+            background-size: cover;
+            text-align: center;
+        }
+        #packages h1{
+
+            text-align: center;
+            font-size: 3.5em;
+            padding-top: 1cm;
+            font-family: serif;
+           color: rgb(210, 51, 51);
+        }
+        #packages p{
+            font-size: 2em;
+            color:rgb(0, 0, 0);
+            text-align: center;
+
+        }
+        #contact
+        {
+            height:80vh;
+            width:100%;
+            background-color: rgb(101, 143, 75);
+            filter:brightness(75%);
+            background-size: cover;
+            text-align: center;
+        }
+        #contact h1{
+            font-size:3.5em;
+            padding-top: 1cm;
+            font-family: serif;
+           color: rgb(18, 6, 81);
+        
+        }
+        #contact section{
+            font-size:1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+            Book Quest!
+        </div>
+        <div class="menu">
+            <a href="#aboutus">About Us</a>
+            <a href="#ourservice"> Books</a>
+            <a href="#packages">Products</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="booking">
+            <a href="#">join us</a>
+        </div>
+        </nav>
+        <section class="caption">
+            <span><b>Discover the joy of reading books</b></span>
+            <h1>Book Quest online book store</h1>
+            <br>
+            <a href="#">buy now!</a>
+          
+        </section>
+    
+     </header>
+    <section id="aboutus">
+        <div>
+        <h1>About Us</h1>
+        <h2>Hello! Reading buffs</h2>
+        </div>
+        <section>
+            <p>  Welcome to Book Quest ,Founded with a passion for storytelling and a love for books, <br> we are dedicated to creating a warm and inviting space where readers of all ages can discover their next great read.<br> We have novels, non-fiction, children's books, and rare finds, reflecting the diverse tastes and interests of our community.<br> Whether you're a lifelong bibliophile or a casual reader, our knowledgeable and friendly staff are here to help you navigate through our collection and find the perfect book to ignite your imagination. <p></p>
+            <p style="color: rgb(107, 19, 19);"></p>
+            <ol></ol>  we believe in the power of books to inspire, educate, and connect people,<br> we are committed to fostering a vibrant literary community through book clubs, author events, and reading programs.<br> Come visit us and let your literary journey begin!</ol>
+         </section>
+    </section>
+    <section id="ourservices">
+       
+            <h1> Books </h1>
+            <section>
+                <p>   </p>
+                <p><b style="text-decoration: underline;"> FICTION:</b></p>
+                <p><b>  Pride and Prejudice by Jane Auste </b> &emsp;&emsp;&emsp;&emsp;1199/- 
+                </p><p><b>1984 by George Orwell</b>&emsp;&emsp;&emsp;399/- </p>
+                <p><b> Moby-Dick by Herman Melville</b>&emsp;&emsp;&emsp;&emsp;499/- </p>
+                <p><b>  The Great Gatsby by F. Scott Fitzgerald </b>&emsp;&emsp;&emsp;&emsp;499/- </p>
+                <p><b style="text-decoration: underline;"> Award winning books:</b></p>
+                <p><b>  Beloved by Toni Morrison</b> &emsp;&emsp;&emsp;699/- </p>
+                <p><b>  The Road by Cormac McCarthy</b>&emsp;&emsp;&emsp;&emsp;799/-</p>
+                <p><b>  Life of Pi by Yann Martel </b>&emsp;&emsp;&emsp;&emsp;899/-  </p>
+             </section>
+    </section>
+    <section id="packages">
+        <h1>PRODUCTS</h1>
+       
+        <p >    Our online bookstore offers an extensive and carefully curated selection of products to cater to every reader's taste and interest. <br>Our vast collection includes bestsellers, timeless classics, and hidden gems across various genres such as fiction, non-fiction, fantasy, science fiction, mystery, romance, and more.<br> In addition to a rich array of books, we provide a variety of e-books and audiobooks, ensuring you can enjoy your favorite titles in your preferred format.<br> We also offer a selection of literary-themed merchandise, including bookish accessories, stationery, and gifts perfect for any book lover.
+        </p> 
+      
+    </section>
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <section style="color: aliceblue;">
+            <p>For any kind of queries,do reach us.Dial <b style="color: rgb(244, 4, 4);">0000000000 .</b></p>
+            <p>Customer care services on above number are available 24 hours.</p>
+            <p><b style="text-decoration: underline;color:rgb(73, 7, 116)">Locations:</b></p>
+            <p>Hitech city,Hyderabad,Telangana.</p>
+            <p>Bandra,Mumbai,Maharastra.</p>
+            <p>Hanmakonda,Warangal,Telangana.</p>
+            <p>Chennai central,Chennai,Tamil Nadu.</p> 
+            <p></p>
+        </section>
+    </section>
+</body>
+</html>
